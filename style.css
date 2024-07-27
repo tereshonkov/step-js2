@@ -1,0 +1,197 @@
+
+
+
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 50px;
+    margin-left: 50px;
+}
+
+.btn-delete {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 5%;
+    left: 92%;
+}
+
+.btn-edit {
+    position: absolute;
+    top: 72%;
+    left: 92%;
+    color: black;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-edit:hover {
+    transform: rotate(20deg);
+    background-color: transparent;
+}
+
+button {
+    background-color: #3498db;
+    margin-right: 35px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-more {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.main{
+    display: flex;
+    flex-grow: 1;
+}
+.filters {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+.visits-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.visit-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.visit-card h3 {
+    margin-top: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+    background-color: #2c3e50;
+    color: white;
+    height: 100px;
+
+}
+.addInput {
+    display: none;
+}
+
+.modal-edit {
+    display: none;
+    background-color: grey;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.visit-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+}
+.visit-card {
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 10px 0;
+}
